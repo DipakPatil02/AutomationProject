@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="110.863">
+    <testcase classname="Testing multi user logins" name="Test login and logout" time="110.241">
+        <system-out><![CDATA[Given Browser  is started...................................................passed
+Then CBT URL is hit.........................................................passed
+Then Enter username as tu0280 and password as CgV5a4aR and Click on Login1..passed
+Then Go through instructions................................................passed
+Then Take Exam..............................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
