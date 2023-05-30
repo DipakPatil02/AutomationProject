@@ -11,23 +11,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class BaseBrowser {
 	public static WebDriverWait wait = null;
 	public static WebDriver driver = null;
-	public static void startBrowser() {
-		
-		String projectpath = System.getProperty("user.dir");
-		
-		//String driverPath = "C:\\Users\\Deepak\\eclipse-workspace\\CucumberProject\\src\\test\\resources\\Driver\\chromedriver.exe";
-		  
-		
-		System.setProperty("webdriver.chrome.driver", projectpath+"/src/test/resources/Driver/chromedriver.exe");
-		
-		  
-		  ChromeOptions op = new ChromeOptions();
-		  op.addArguments("--remote-allow-origins=*");
-		  driver = new ChromeDriver(op);
-
-		//driver = new FirefoxDriver();
-		   
-		   //wait = new WebDriverWait(driver, 30);
+	public static void startBrowser() {	
+		String projectpath = System.getProperty("user.dir");	
+		System.setProperty("webdriver.chrome.driver", projectpath+"/src/test/resources/Driver/chromedriver.exe");		  
+		ChromeOptions op = new ChromeOptions();
+		op.addArguments("--remote-allow-origins=*");
+		driver = new ChromeDriver(op);
 	}
 	
 	//public boolean waitUntilTextNotFound(String expectedTitle) {

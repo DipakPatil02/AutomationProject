@@ -12,4 +12,4 @@ Feature: Testing multi user logins
     #Then Logout
     Examples: 
       | Username | Password |
-      | tu0280   | CgV5a4aR |
+      | dm0006   | V7zghwB8 |
