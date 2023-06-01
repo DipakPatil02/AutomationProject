@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import AutomationTrialQA2_copy.BaseBrowser;
 
 public class LoginFun extends BaseBrowser {
+	//Use clear data when we have email id for that user
 	public static void main(String[] args, String Username, String Password, String clearurl) throws InterruptedException {
 		LoginFun OB=new LoginFun();
 		OB.startBrowser1();
@@ -22,7 +23,7 @@ public class LoginFun extends BaseBrowser {
 	public void startBrowser1() throws InterruptedException {	
 		startBrowser();
 	}
-	//When we completed the exam again we have to automation for that user we required email id
+	//When we completed the exam, for reset exam again we required email id
 	public void clearData(String clearurl) throws InterruptedException{
 		driver.manage().window().maximize();	
 		driver.get("https://qa.edulabcbt.com/oneup/auth/clearExamData?email="+clearurl);

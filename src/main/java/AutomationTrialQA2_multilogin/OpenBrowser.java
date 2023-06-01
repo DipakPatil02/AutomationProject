@@ -1,19 +1,15 @@
 package AutomationTrialQA2_multilogin;
-
-
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-
 import java.util.concurrent.TimeUnit;
-
 import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
 import AutomationTrialQA2_copy.BaseBrowser;
 
 public class OpenBrowser extends BaseBrowser {
+	//Use clear data when we have email id for that user
 	public static void main(String[] args, String Username, String Password, String clearurl) throws InterruptedException {
 		OpenBrowser OB=new OpenBrowser();
 		OB.startBrowser1();
@@ -23,7 +19,7 @@ public class OpenBrowser extends BaseBrowser {
 		OB.gothroughInstructions();
 		OB.logout();
 	}	
-	//When we completed the exam again we have to automation for that user we required email id
+	//When we completed the exam, for reset exam again we required email id
 	public void startBrowser1() throws InterruptedException {
 	    startBrowser();
 	}

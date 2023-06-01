@@ -1,6 +1,4 @@
 package AutomationTrialQA2_superadminlogin;
-
-
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -8,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import AutomationTrialQA2_copy.BaseBrowser;
 
 public class SuperAdminLogin extends BaseBrowser{
+	//Use clear data when we have email id for that user
 	public static void main(String[] args, String Username, String Password, String clearurl) throws InterruptedException {
 		SuperAdminLogin OB=new SuperAdminLogin();
 		OB.startBrowser1();

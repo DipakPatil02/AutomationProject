@@ -1,9 +1,5 @@
 //package StepDefinations;
-//
-//
-//
 //import org.openqa.selenium.WebDriver;
-//
 //import AutomationTrialQA2_copy.BaseBrowser;
 //import AutomationTrialQA2_multilogin.OpenBrowser;
 //import io.cucumber.java.en.Given;
@@ -38,7 +34,7 @@
 //	}
 //	@Then("Take Exam")
 //	public void take_exam() throws InterruptedException {
-//	    OB.startexam1();   
+//	    OB.startexam();   
 //	}
 //		}
 

@@ -1,8 +1,4 @@
 package StepDefinations.LoginFunctionality;
-
-
-
-
 import org.openqa.selenium.WebDriver;
 
 import AutomationTrialQA2_copy.BaseBrowser;
