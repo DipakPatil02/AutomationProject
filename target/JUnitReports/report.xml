@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.575">
+    <testcase classname="Testing multi user logins" name="Test login and logout" time="10.986">
+        <failure message="element click intercepted: Element &lt;button _ngcontent-kbw-c236=&quot;&quot; disabled=&quot;&quot; class=&quot;button button--bg-blue button--radius-small&quot;&gt;...&lt;/button&gt; is not clickable at point (283, 330). Other element would receive the click: &lt;div _ngcontent-kbw-c236=&quot;&quot; class=&quot;t-select__btn&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=113.0.5672.127)&#10;Build info: version: '4.8.1', revision: '8ebccac989'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [31349fd8c1ff61b38fd51ee1155109be, clickElement {id=6A2A6BB0D6846A546D8C270F876E182C_element_14}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Deepak\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60861}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60861/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (31349fd8c1ff61b38fd51ee1155109be)] -&gt; xpath: //button[@class='button button--bg-blue button--radius-small']]&#10;Session ID: 31349fd8c1ff61b38fd51ee1155109be" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[Given Browser  is started...................................................passed
+Then CBT URL is hit.........................................................passed
+Then Enter username as dm0006 and password as V7zghwB8 and Click on Login1..passed
+Then Go through instructions................................................failed
+Then Take Exam..............................................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-kbw-c236="" disabled="" class="button button--bg-blue button--radius-small">...</button> is not clickable at point (283, 330). Other element would receive the click: <div _ngcontent-kbw-c236="" class="t-select__btn">...</div>
+  (Session info: chrome=113.0.5672.127)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [31349fd8c1ff61b38fd51ee1155109be, clickElement {id=6A2A6BB0D6846A546D8C270F876E182C_element_14}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\Deepak\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:60861}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60861/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (31349fd8c1ff61b38fd51ee1155109be)] -> xpath: //button[@class='button button--bg-blue button--radius-small']]
+Session ID: 31349fd8c1ff61b38fd51ee1155109be
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at AutomationTrialQA2_loginfun.LoginFun.gothroughInstructions(LoginFun.java:54)
+	at StepDefinations.LoginFunctionality.LoginFunSeps.go_through_instructions(LoginFunSeps.java:30)
+	at ✽.Go through instructions(file:///C:/Users/Deepak/eclipse-workspace/CucumberProject/src/test/resources/features/LoginFuctionality.feature:9)
+]]></failure>
+    </testcase>
+</testsuite>
